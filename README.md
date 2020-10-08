@@ -2,7 +2,7 @@
 ## Description
 <br>
 <br>
-<img src="images/Covid-19.jpg" alt="Girl in a jacket" width="500" height="600">
+<img src="images/Covid-19.jpg" alt="Girl in a jacket" width="650" height="600">
 <br>
 <br>
 
@@ -17,7 +17,7 @@ learning predictive approaches.
 </p>
 
 <br>
-- Create Branch for branch Frontend and Backend for testable code Only
-- Other branches can be created for developmental use where you appropriate.
-- Master branch is restricted.
+- Create Branch for branch Frontend and Backend for testable code Only <br>
+- Other branches can be created for developmental use where you appropriate.<br>
+- Master branch is restricted.<br>
 - To add code to Master Branch the code must be Approved and Verified.
