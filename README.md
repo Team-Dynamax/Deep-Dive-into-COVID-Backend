@@ -38,7 +38,7 @@ Document Naming Convention: <br>
 - The right digit is incremented when changes are made to the document.<br>
 - The left digit is incremented when the document is approved by the mentors. <br>
 - When a digit is incremented, it reset all bits to the right to 0. <br>
-- When changes are made to a document, it must be recorded in the change log. <br>
+- When changes are made to a document, it must be recorded in the change log at the beginning of that document. <br>
 
 <br>
 
