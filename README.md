@@ -60,9 +60,9 @@ Kevin Seegobin
   <tr>
     <td>
       <img src="icons/PNG/1x/248-tyranitar.png" align="left" width="27" height="27" style="float: right;">
-      <img src="icons/PNG/1x/491-darkrai.png" align="left" width="27" height="27" style="float: right;">
     </td>
-    <td>Tyrel</td>
-    <td>Cadogan</td>
+    <td>Tyrel Cadogan</td>
+    <td>Product Manager</td>
+    <td>Excellent Work as always!</td>
   </tr>
 </table>
