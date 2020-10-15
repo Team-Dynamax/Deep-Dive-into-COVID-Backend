@@ -39,3 +39,6 @@ Document Naming Convention: <br>
 - The left digit is incremented when the document is approved by the mentors. <br>
 - When a digit is incremented, it reset all bits to the right to 0. <br>
 - When changes are made to a document, it must be recorded in the change log. <br>
+
+<br>
+Tyrel Cadogan <img src="icons/PNG/1x/001-bulbasaur.png">
