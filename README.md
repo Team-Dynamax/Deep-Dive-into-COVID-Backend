@@ -65,4 +65,12 @@ Kevin Seegobin
     <td>Product Manager</td>
     <td>Excellent Work as always!</td>
   </tr>
+  <tr>
+    <td>
+      <img src="icons/PNG/1x/248-tyranitar.png" align="left" width="27" height="27" style="float: right;">
+    </td>
+    <td>Kevin Seegobin</td>
+    <td>Configuration Manager</td>
+    <td>Excellent Work as always!</td>
+  </tr>
 </table>
