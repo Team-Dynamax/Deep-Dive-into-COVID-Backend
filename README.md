@@ -52,19 +52,65 @@ Document Naming Convention: <br>
     <th>Comments</th>
   </tr>
   <tr>
-    <td>
-      <img src="icons/PNG/1x/248-tyranitar.png" align="left" width="27" height="27" style="float: right;">
-    </td>
-    <td>Tyrel Cadogan</td>
-    <td>Product Manager</td>
-    <td>Excellent Work as always!</td>
+    <td></td>
+    <td>Idris Ali </td>
+    <td>Testing Team Leader</td>
+    <td>-----</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Asif Khan</td>
+    <td>Testing Team Developer</td>
+    <td>------</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Anthony Meade</td>
+    <td>Testing Team Developer</td>
+    <td>------</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Arif Khan</td>
+    <td>Testing Team Developer</td>
+    <td>-------</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Shankar Ramharack</td>
+    <td>Developer Team Leader(Backend)</td>
+    <td>--------</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Lee Bissessar</td>
+    <td>Developer Team (Frontend)</td>
+    <td>--------</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Joshua Rampersad</td>
+    <td>Development Team</td>
+    <td>------</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Sa’id Ali</td>
+    <td>Development Team</td>
+    <td>---------</td>
   </tr>
   <tr>
     <td>
-      <img src="icons/PNG/1x/487-giratina-altered.png" align="left" width="27" height="27" style="float: right;">
+          <img src="icons/PNG/1x/248-tyranitar.png" align="left" width="27" height="27" style="float: right;">
     </td>
-    <td>Kevin Seegobin</td>
-    <td>Configuration Manager</td>
-    <td>Excellent Work as always!</td>
+    <td>Ruth Affonso-Smith</td>
+    <td>Developer</td>
+    <td>--------</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Denelle Cardinez</td>
+    <td>Developer Team</td>
+    <td>------</td>
   </tr>
 </table>
