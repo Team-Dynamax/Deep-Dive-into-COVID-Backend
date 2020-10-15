@@ -67,7 +67,7 @@ Kevin Seegobin
   </tr>
   <tr>
     <td>
-      <img src="icons/PNG/1x/487-giratina.png" align="left" width="27" height="27" style="float: right;">
+      <img src="icons/PNG/1x/487-giratina-altered.png" align="left" width="27" height="27" style="float: right;">
     </td>
     <td>Kevin Seegobin</td>
     <td>Configuration Manager</td>
