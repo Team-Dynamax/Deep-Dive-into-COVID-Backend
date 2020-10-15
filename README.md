@@ -51,6 +51,12 @@ Document Naming Convention: <br>
     <th>Role</th> 
     <th>Comments</th>
   </tr>
+    <tr>
+    <td></td>
+    <td>Vishard Latchman</td>
+    <td>Testing Team Developer</td>
+    <td>------</td>
+  </tr>
   <tr>
     <td></td>
     <td>Idris Ali </td>
@@ -64,7 +70,9 @@ Document Naming Convention: <br>
     <td>------</td>
   </tr>
   <tr>
-    <td></td>
+    <td>
+     <img src="icons/PNG/1x/025-pikachu.png" align="left" width="27" height="27" style="float: right;">
+    </td>
     <td>Anthony Meade</td>
     <td>Testing Team Developer</td>
     <td>------</td>
