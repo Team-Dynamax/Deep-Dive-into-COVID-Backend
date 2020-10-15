@@ -42,5 +42,8 @@ Document Naming Convention: <br>
 
 <br>
 
-<img src="icons/PNG/1x/001-bulbasaur.png" align="left" width="27" height="27" style="float: right;">
+<img src="icons/PNG/1x/248-tyranitar.png" align="left" width="27" height="27" style="float: right;">
 Tyrel Cadogan 
+<img src="icons/PNG/1x/001-bulbasaur.png" align="left" width="27" height="27" style="float: right;">
+Kevin Seegobin 
+
