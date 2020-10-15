@@ -52,9 +52,10 @@ Kevin Seegobin
 
 <table style="width:100%">
   <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
+    <th>Employee Of the Week Badges</th>
+    <th>Name</th>
+    <th>Role</th> 
+    <th>Comments</th>
   </tr>
   <tr>
     <td>
@@ -63,15 +64,5 @@ Kevin Seegobin
     </td>
     <td>Tyrel</td>
     <td>Cadogan</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
-  <tr>
-    <td>John</td>
-    <td>Doe</td>
-    <td>80</td>
   </tr>
 </table>
