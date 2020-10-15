@@ -41,4 +41,6 @@ Document Naming Convention: <br>
 - When changes are made to a document, it must be recorded in the change log. <br>
 
 <br>
-Tyrel Cadogan <img src="icons/PNG/1x/001-bulbasaur.png" align="left">
+Tyrel Cadogan1 
+Tyrel Cadogan2 <img src="icons/PNG/1x/001-bulbasaur.png" align="left">
+Tyrel Cadogan3 
