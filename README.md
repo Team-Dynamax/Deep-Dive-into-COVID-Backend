@@ -78,25 +78,25 @@ Document Naming Convention: <br>
   <tr>
     <td></td>
     <td>Shankar Ramharack</td>
-    <td>Developer Team Leader(Backend)</td>
+    <td>Developer Team Leader(Backend Lead)</td>
     <td>--------</td>
   </tr>
   <tr>
     <td></td>
     <td>Lee Bissessar</td>
-    <td>Developer Team (Frontend)</td>
+    <td>Developer (Frontend Lead)</td>
     <td>--------</td>
   </tr>
   <tr>
     <td></td>
     <td>Joshua Rampersad</td>
-    <td>Development Team</td>
+    <td>Developer</td>
     <td>------</td>
   </tr>
   <tr>
     <td></td>
     <td>Sa’id Ali</td>
-    <td>Development Team</td>
+    <td>Developer</td>
     <td>---------</td>
   </tr>
   <tr>
@@ -110,7 +110,7 @@ Document Naming Convention: <br>
   <tr>
     <td></td>
     <td>Denelle Cardinez</td>
-    <td>Developer Team</td>
+    <td>Developer</td>
     <td>------</td>
   </tr>
 </table>
