@@ -51,6 +51,12 @@ Document Naming Convention: <br>
     <th>Role</th> 
     <th>Comments</th>
   </tr>
+    <tr>
+    <td></td>
+    <td>Vishard Latchman</td>
+    <td>Testing Team Developer</td>
+    <td>------</td>
+  </tr>
   <tr>
     <td></td>
     <td>Idris Ali </td>
