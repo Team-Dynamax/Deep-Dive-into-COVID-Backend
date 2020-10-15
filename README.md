@@ -2,7 +2,7 @@
 ## Description
 <br>
 <br>
-<img src="images/newcovid.jpeg" alt="Girl in a jacket" width="800" height="600">
+<img src="images/newcovid.jpeg" alt="Girl in a jacket" width="900" height="600">
 <br>
 <br>
 
