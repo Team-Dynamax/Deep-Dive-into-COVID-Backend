@@ -42,5 +42,5 @@ Document Naming Convention: <br>
 
 <br>
 
-<img src="icons/PNG/1x/001-bulbasaur.png" align="left" width="25" height="25">
-Tyrel Cadogan3 
+<img src="icons/PNG/1x/001-bulbasaur.png" align="left" width="27" height="27">
+Tyrel Cadogan 
