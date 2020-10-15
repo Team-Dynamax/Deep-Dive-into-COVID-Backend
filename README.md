@@ -42,12 +42,6 @@ Document Naming Convention: <br>
 
 <br>
 
-<img src="icons/PNG/1x/248-tyranitar.png" align="left" width="27" height="27" style="float: right;">
-Tyrel Cadogan 
-<br>
-<br>
-<img src="icons/PNG/1x/001-bulbasaur.png" align="left" width="27" height="27" style="float: right;">
-Kevin Seegobin 
 
 
 <table style="width:100%">
