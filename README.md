@@ -50,3 +50,27 @@ Tyrel Cadogan
 Kevin Seegobin 
 
 
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="icons/PNG/1x/248-tyranitar.png" align="left" width="27" height="27" style="float: right;">
+    </td>
+    <td>Tyrel</td>
+    <td>Cadogan</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
