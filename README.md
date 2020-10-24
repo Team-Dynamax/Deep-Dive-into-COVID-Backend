@@ -46,7 +46,7 @@ Document Naming Convention: <br>
 
 <table style="width:100%">
   <tr>
-    <th>Employee Of the Week Badges</th>
+    <th>Member Of the Week Badges</th>
     <th>Name</th>
     <th>Role</th> 
     <th>Comments</th>
