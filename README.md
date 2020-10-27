@@ -87,13 +87,19 @@ Document Naming Convention: <br>
     <td>Member of the Week for weeks:</td>
   </tr>
   <tr>
-    <td></td>
+    <td>
+      <img src="icons/PNG/1x/503-samurott.png" align="left" width="27" height="27" style="float: right;">
+      <img src="icons/PNG/1x/503-samurott.png" align="left" width="27" height="27" style="float: right;">
+    </td>
     <td>Shankar Ramharack</td>
     <td>Developer Team Leader(Backend Lead)</td>
     <td>Member of the Week for weeks: 3, 5</td>
   </tr>
   <tr>
-    <td></td>
+    <td>
+      <img src="icons/PNG/1x/483-dialga.png" align="left" width="27" height="27" style="float: right;">
+      <img src="icons/PNG/1x/395-empoleon.png" align="left" width="27" height="27" style="float: right;">
+    </td>
     <td>Lee Bissessar</td>
     <td>Developer (Frontend Lead)</td>
     <td>Member of the Week for weeks: 5, 6</td>
@@ -105,7 +111,9 @@ Document Naming Convention: <br>
     <td>Member of the Week for weeks:</td>
   </tr>
   <tr>
-    <td></td>
+    <td>
+      <img src="icons/PNG/1x/384-raquaza.png" align="left" width="27" height="27" style="float: right;">`
+    </td>
     <td>Sa’id Ali</td>
     <td>Developer (Backend)</td>
     <td>Member of the Week for weeks: 5</td>
@@ -127,3 +135,4 @@ Document Naming Convention: <br>
     <td>Member of the Week for weeks: </td>
   </tr>
 </table>
+kevin is cool i was told to do this. 
