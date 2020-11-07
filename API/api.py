@@ -27,7 +27,7 @@ class Dropdown(Resource):
 
 #Sa'id
 class Image(Resource):
-    def post(self):
+    def put(self):
         '''
         Returns a JSON file containing a the SVG image as a string.
         '''
