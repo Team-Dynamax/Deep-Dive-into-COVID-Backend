@@ -7,32 +7,40 @@ import json
 import firebaseInterface
 import mpld3
 
-#Pygal DOCS: http://www.pygal.org/en/stable/documentation/
+#Seaborn docs: http://seaborn.pydata.org/
+#Mpld3 docs: https://mpld3.github.io/modules/API.html
+#Matplotlib docs: https://matplotlib.org/3.3.2/index.html
 
 
-version = '0.0.1'
+
+version = '0.0.2'
 
 def makeLineplot(data):
     '''
         Generates a lineplot with one or more countries for the features specified. 
-        If request contains a valid date interval
-        the plot should be generated only for that interval. 
         
-        Returns a json file containg the svg image as a base64 encoded string
+        Returns an html string containg the figure via the mpld3 library
 
     '''
+    #Grabbing locations and feature from user json request
     locations = data['countries']
     feature = data['feature']
 
+
+    #fetching latest cleaned file from firebase database
     firebaseInterface.fetch_file('test.csv','Cleaned Data/cleaned_data_test.csv')
     df = pd.read_csv('test.csv')
-    #make dataframe subset of countries
+
+    #make dataframe subset of countries requested
     df = df[df['location'].isin(locations)]
+    #converting the date column to a datetime type column to allow neater and cleaner visualization
     df['date'] = pd.to_datetime(df['date'])
 
     #make plot with subset of countries
     plt.figure(figsize=(15,8))
     sns.lineplot(data=df,x='date',y=feature,hue='location')
+
+    #return an html string of the visualization
     return mpld3.fig_to_html(plt.gcf())     
 
         
@@ -41,10 +49,8 @@ def makeLineplot(data):
 def makeBarchart(usr_request):
     '''
         Generates a barplot with one or more countries for the features specified. 
-        If request contains a valid date interval
-        the plot should be generated only for that interval. 
         
-        Returns a json file containg the svg image as a base64 encoded string
+        Returns an html string containg the figure via the mpld3 library
 
     '''
     pass
@@ -52,10 +58,8 @@ def makeBarchart(usr_request):
 def makePiechart(usr_request):
     '''
         Generates a piechart with two or more countries for the features specified. 
-        If request contains a valid date interval
-        the plot should be generated only for that interval. 
         
-        Returns a json file containg the svg image as a base64 encoded string
+         Returns an html string containg the figure via the mpld3 library
 
     '''
     pass
