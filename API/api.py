@@ -2,12 +2,25 @@ from flask import Flask
 from flask import request
 from flask_restful import Api, Resource
 import visualization as viz
-from flask import jsonify
 import preprocessing
+
+#See API documentation and SDD for more details.
+#Flask docs: https://flask.palletsprojects.com/en/1.1.x/
+#Flask-RESTful docs: https://flask-restful.readthedocs.io/en/latest/
+#Visualization docs: See SDD and visualizaton module for more support.
+#Preprocessing docs: See SDD and preprocessing module for more support.
+
+#Postman was very helpful in testing and validation. Although the desktop version was the 
+#only way to use the software. The website was unresponsive and buggy so I would 
+#strongly recommend the Desktop version. 
+# ~Shankar 
+
+#Postman website: https://www.postman.com/
+
+version = "0.0.2"
 
 app = Flask(__name__)
 api = Api(app)
-
 
 #Just ya typical Hi there
 class HelloWorld(Resource):
@@ -63,10 +76,7 @@ class Image(Resource):
                 return viz.makeLineplot(req), 200
             else:
                 return "JSON received!, but not for a lineplot", 200
-            
-
         else:
-
             # The request body wasn't JSON so return a 400 HTTP status code
             return "Request was not JSON", 400
 
