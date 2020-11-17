@@ -1,4 +1,0 @@
-flask
-pandas
-flask_restful
-gunicorn
