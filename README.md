@@ -1,6 +1,6 @@
 # Deep-Dive-into-COVID-Backend/dev_backend
 This branch serves as a playground for development and testing. All non-final files are to be placed here from
-backend.<br />
+backend.<br /> <br />
 See docs for API description. <br />
 For accessing firebase contact dev lead for service credentials. <br />
 ## API 
@@ -12,17 +12,15 @@ At the moment the available endpoints are:
 * /api/options/<string:datatype>
 * /api/options/countries
 * /api/options/charts
-* /api/charts/<string:visualization><br />
+* /api/charts/<string:visualization> <br />
 Example:<br /><br />
 
-'''
-curl https://td-coviz.herokuapp.com/hew
-'''
+    curl https://td-coviz.herokuapp.com/hew
+
 
 The above will produce an JSON file with the following contents
 
-'''
-{"Greeting": "Hello World"}
-'''
+    {"Greeting": "Hello World"}
+
 
 
