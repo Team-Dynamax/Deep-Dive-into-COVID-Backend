@@ -13,12 +13,14 @@ At the moment the available endpoints are:
 * /api/options/<string:datatype>
 * /api/options/countries
 * /api/options/charts
-* /api/charts/<string:visualization><br />
-Example:<br /> 
-    curl https://td-coviz.herokuapp.com/hew 
-The above will produce an JSON file with the following contents
+* /api/charts/<string:visualization>
 
-    {"Greeting": "Hello World"}
+Example:<br /><br />
+`curl https://td-coviz.herokuapp.com/api/hew`<br /><br />
+Above will produce a hello world output <br /><br />
+`{"Greeting": "Hello World"}`
+
+
 
 ## Dependancies
 
