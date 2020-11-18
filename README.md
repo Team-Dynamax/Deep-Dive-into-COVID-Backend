@@ -12,8 +12,8 @@ At the moment the available endpoints are:
 * /api/options/<string:datatype>
 * /api/options/countries
 * /api/options/charts
-* /api/charts/<string:visualization> <br />
-Example:<br /><br />
+* /api/charts/<string:visualization> <br /><br />
+Example:<br />
 
     curl https://td-coviz.herokuapp.com/hew
 

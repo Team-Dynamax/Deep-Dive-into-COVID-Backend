@@ -2,8 +2,9 @@ import pandas as pd
 import numpy as np
 import pyrebase
 
-version = "0.0.0"
-    
+version = "0.0.1"
+
+#See: shorturl.at/hiF89 for info on why httplib2 v 0.15.0 is used rather than higher versions.
 
 firebaseConfig = {
         "apiKey": "AIzaSyBlLrs2zKP0C5nwG97aE4wpMoiQH5ulAlE",
@@ -59,6 +60,7 @@ def getVersion():
     print("Version: {}".format(version))
 
 #Testing :)
-#upload_file("test_img.svg","visualizations/sample.svg")
+#upload_file("test.csv","Cleaned Data/test.csv")
+
 #getVersion()
 #fetch_file("x.svg","visualizations/sample.svg")

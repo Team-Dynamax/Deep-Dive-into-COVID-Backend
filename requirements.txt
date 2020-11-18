@@ -7,3 +7,5 @@ numpy
 json5
 gunicorn
 plotly
+httplib2==0.15.0
+google-api-python-client==1.7.11
