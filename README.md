@@ -13,10 +13,9 @@ At the moment the available endpoints are:
 * /api/options/<string:datatype>
 * /api/options/countries
 * /api/options/charts
-* /api/charts/<string:visualization>
-
-<br />Example:<br />
-    curl https://td-coviz.herokuapp.com/hew
+* /api/charts/<string:visualization><br />
+Example:<br /> 
+    curl https://td-coviz.herokuapp.com/hew 
 The above will produce an JSON file with the following contents
 
     {"Greeting": "Hello World"}
@@ -26,3 +25,4 @@ The above will produce an JSON file with the following contents
 This API utilizes httplib2 version 0.15.0 and google-api-python-client version 1.7.11 to work around an internal error in firebases's implementation.
 See shorturl.at/hiF89 for more info on this issue and the fix.
 
+ 
