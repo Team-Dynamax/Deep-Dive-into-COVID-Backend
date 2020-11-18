@@ -25,6 +25,6 @@ Above will produce a hello world output <br /><br />
 ## Dependancies
 
 This API utilizes httplib2 version 0.15.0 and google-api-python-client version 1.7.11 to work around an internal error in firebases's implementation.
-See [Stackoverflow](shorturl.at/hiF89) for more info on this issue and the fix.
+See <a href="shorturl.at/hiF89">stackoverflow</a> for more info on this issue and the fix.
 
  
