@@ -9,7 +9,7 @@ The API can be found at : https://td-coviz.herokuapp.com/ <br />
 
 The above URL may change due to operation constraints of the Heroku platform.<br />
 At the moment the available endpoints are:
-* /api/hew
+* /api/hello
 * /api/options/<string:datatype>
 * /api/options/countries
 * /api/options/charts
