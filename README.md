@@ -16,7 +16,7 @@ At the moment the available endpoints are:
 * /api/charts/<string:visualization>
 
 Example:<br /><br />
-`curl https://td-coviz.herokuapp.com/api/hew`<br /><br />
+`curl https://td-coviz.herokuapp.com/api/hello`<br /><br />
 Above will produce a hello world output <br /><br />
 `{"Greeting": "Hello World"}`
 
