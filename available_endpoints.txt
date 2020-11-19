@@ -1,4 +1,4 @@
-/api/hew
+/api/hello
 /api/options/<string:datatype>
 /api/options/countries
 /api/options/charts
