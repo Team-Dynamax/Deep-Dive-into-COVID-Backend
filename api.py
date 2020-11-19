@@ -19,18 +19,28 @@ import preprocessing
 
 #Postman website: https://www.postman.com/
 
-version = "0.0.6"
+version = "0.0.8"
 
-
+# Todo: Implement CORS support
+# Look at : 
+# https://stackoverflow.com/questions/19962699/flask-restful-cross-domain-issue-with-angular-put-options-methods
+# for a possible fix
 
 app = Flask(__name__)
-CORS(app, resources=r'/api/*', headers='Content-Type')
+cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 api = Api(app)
 
 
+@app.after_request
+def after_request(response):
+  response.headers.add('Access-Control-Allow-Origin', '*')
+  response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+  response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
+  return response
+
 
 #Just ya typical Hi there
-@api.resource('/api/hew')
+@api.resource('/api/hello')
 class HelloWorld(Resource):
     def get(self):
         return {"Greeting":"Hello World"} #put a stub here that calls headings from csv file on server
@@ -44,7 +54,6 @@ class Headings(Resource):
     def get(self,datatype):
         '''
         Return a JSON file containg the requested headings
-
         Read the csv from firebase and collect all string columns into categorical
         '''
         ret = []
@@ -55,12 +64,12 @@ class Headings(Resource):
         else:
             return "Invalid heading type", 400
         
-        return {datatype:ret}, 200
+        return ret, 200
 
 @api.resource('/api/options/countries')
 class Countries(Resource):
-    def get(self):
-        return {"countries":['Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola',
+    def get(self): #Change to fetch countries directly from firebase
+        return ['Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola',
        'Anguilla', 'Antigua and Barbuda', 'Argentina', 'Armenia', 'Aruba',
        'Australia', 'Austria', 'Azerbaijan', 'Bahamas', 'Bahrain',
        'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Benin',
@@ -107,16 +116,19 @@ class Countries(Resource):
        'United Arab Emirates', 'United Kingdom', 'United States',
        'United States Virgin Islands', 'Uruguay', 'Uzbekistan', 'Vatican',
        'Venezuela', 'Vietnam', 'Wallis and Futuna', 'Western Sahara',
-       'World', 'Yemen', 'Zambia', 'Zimbabwe']}, 200
+       'World', 'Yemen', 'Zambia', 'Zimbabwe'], 200
 
 @api.resource('/api/options/charts')
 class ChartOptions(Resource):
     def get(self):
-        return {"charts":["lineplot","piechart","barchart"]},200
+        return ["lineplot","piechart","barchart"],200
 
 #Shankar
 @api.resource('/api/charts/<string:visualization>')
+#@cross_origin()
 class Image(Resource):
+    #def options():
+    #    return {'Allow' : 'PUT' }, 200, { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods' : 'PUT,GET' }
     def put(self,visualization):
         '''
         Returns html string containing the visualization
@@ -145,7 +157,8 @@ class Image(Resource):
 
 
                 resp = make_response(viz.makeLineplot(req))
-                resp.status_code = 200
+                resp.status_code = 201
+                #resp.headers['Access-Control-Allow-Origin'] = '*'
                 resp.mimetype = 'text/html'
                 return resp
                 
@@ -164,5 +177,4 @@ class Image(Resource):
 
 
 if __name__ == '__main__':
-    app.run()
-
+    app.run(debug=True)

@@ -4,7 +4,7 @@ import pandas as pd
 #import matplotlib.pyplot as plt
 import numpy as np
 import json
-import firebaseInterface
+import firebaseInterface as fi
 import plotly
 import plotly.express as px
 #import mpld3
@@ -19,6 +19,9 @@ version = '0.0.3'
 
 
 def makeLineplot(data):
+    return "<html> <head> <meta charset=\"utf-8\" /> </head> <body>Hello World</body></html>"
+
+
     #df = pd.read_csv('https://covid.ourworldindata.org/data/owid-covid-data.csv')
     # usr_req = {}
     # with open(data) as json_file:
@@ -27,34 +30,35 @@ def makeLineplot(data):
     #print(usr_req)
 
     #Grabbing locations and feature from user json request
-    locations = data['countries']
-    feature = data['feature']
+    # locations = data['countries']
+    # feature = data['feature']
 
-    #df = pd.read_csv('https://covid.ourworldindata.org/data/owid-covid-data.csv')
-    firebaseInterface.fetch_file('test.csv','Cleaned Data/cleaned_data_test.csv')
-    df = pd.read_csv('test.csv')
+    # #df = pd.read_csv('https://covid.ourworldindata.org/data/owid-covid-data.csv')
+    # fi.fetch_file('test.csv','Cleaned Data/cleaned_data_test.csv') #consider using a url instead of downloading data
+    # df = pd.read_csv('test.csv')
 
-    #make dataframe subset of countries requested
-    df = df[df['location'].isin(locations)]
-    #converting the date column to a datetime type column to allow neater and cleaner visualization
-    df['date'] = pd.to_datetime(df['date'])
+    # #make dataframe subset of countries requested
+    # df = df[df['location'].isin(locations)]
+    # #converting the date column to a datetime type column to allow neater and cleaner visualization
+    # df['date'] = pd.to_datetime(df['date'])
 
-    #make plot with subset of countries
-    #plt.figure(figsize=(15,8))
-    #sns.lineplot(data=df,x='date',y=feature,hue='location')
+    # #make plot with subset of countries
+    # #plt.figure(figsize=(15,8))
+    # #sns.lineplot(data=df,x='date',y=feature,hue='location')
 
-    #return an html string of the visualization
-    #return mpld3.fig_to_html(plt.gcf())    
+    # #return an html string of the visualization
+    # #return mpld3.fig_to_html(plt.gcf())    
 
 
-    # gen plot
-    fig = px.line(df, x="date", y=feature, color="location",
-              line_group="location") 
+    # # gen plot
+    # fig = px.line(df, x="date", y=feature, color="location",
+    #           line_group="location") 
 
-    # Show plot 
-    #fig.show()
-    return plotly.io.to_html(fig, include_plotlyjs=True,full_html=True)
+    # # Show plot 
+    # #fig.show()
+    # return plotly.io.to_html(fig, include_plotlyjs=True,full_html=True)
     #return plotly.io.to_html(fig, full_html=True)
+    
 
 #  def makeLineplot(data):
 #     '''
