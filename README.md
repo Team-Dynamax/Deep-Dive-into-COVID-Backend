@@ -23,8 +23,8 @@ Huang, Yubo, Yan Wu, and Weidong Zhang. 2020. “Comprehensive Identification an
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 110041. https://doi.org/10.1016/j.chaos.2020.110041.
 
 Koutsellis, Themistoklis, and Alexandros Nikas. 2020. “A Predictive Model and Country Risk Assessment for<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; COVID-19: An Application of the Limited Failure Population Concept.” Chaos, Solitons & Fractals 140 (November):<br/ >
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 110240. https://doi.org/10.1016/j.chaos.2020.110240.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; COVID-19: An Application of the Limited Failure Population Concept.”<br /> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chaos, Solitons & Fractals 140 (November): 110240. https://doi.org/10.1016/j.chaos.2020.110240.
 
 Lalmuanawma, Samuel, Jamal Hussain, and Lalrinfela Chhakchhuak. 2020. “Applications of Machine Learning and<br /> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Artificial Intelligence for Covid-19 (SARS-CoV-2) Pandemic: A Review.” Chaos, Solitons & Fractals 139 (October):<br />
