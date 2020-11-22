@@ -79,11 +79,8 @@ class ChartOptions(Resource):
         return ["lineplot","piechart","barchart"],200
 
 #Shankar
-@api.resource('/api/charts/<string:visualization>')
-#@cross_origin()
-class Image(Resource):
-    #def options():
-    #    return {'Allow' : 'PUT' }, 200, { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods' : 'PUT,GET' }
+@api.resource('/api/comparecharts/<string:visualization>')
+class Standalone(Resource):
     def put(self,visualization):
         '''
         Returns html string containing the visualization
@@ -94,22 +91,8 @@ class Image(Resource):
             # Parse the JSON into a Python dictionary
             req = request.get_json()
 
-            # Print the dictionary
-            #print(req)
-
-            # Return a string along with an HTTP status code
-            # return "JSON received!", 200
             
             if(visualization == "lineplot"):
-                #html_text =  viz.makeLineplot(req) #how do i get the passed json file?
-                #Html_file= open("resp.html","w")
-                #Html_file.write(html_text)
-                #Html_file.close()
-                #return "Lineplot generated in index.html", 200
-                #return viz.makeLineplot(req), 200, {'content-type': 'text/html'}
-                #text = viz.makeLineplot(req)
-
-
 
                 resp = make_response(viz.makeLineplot(req))
                 resp.status_code = 201
@@ -117,12 +100,53 @@ class Image(Resource):
                 resp.mimetype = 'application/json'
                 return resp
                 
+            elif(visualization == "piechart"):
+                resp = make_response(viz.makePiechart(req))
+                resp.status_code = 201
+                resp.mimetype = 'application/json'
+                return resp
 
-                # file = open("sample.html","w")
-                # file.write(text)
-                # file.close()
-                # #print(text)
-                # return {'raw_html':'Viz html'}, 200
+            elif(visualization == "barchart"):
+                resp = make_response(viz.makeBarchart(req))
+                resp.status_code = 201
+                #resp.headers['Access-Control-Allow-Origin'] = '*'
+                resp.mimetype = 'application/json'
+                return resp
+            else:
+                return "JSON received!, but not for a lineplot", 200
+            
+        else:
+            # The request body wasn't JSON so return a 400 HTTP status code
+            return "Request was not JSON", 400
+
+@api.resource('/api/onechart/<string:cmpvisualization>')
+#@cross_origin()
+class Image(Resource):
+    def put(self,cmpvisualization):
+        '''
+        Returns html string containing the visualization
+        '''
+        
+        if request.is_json:
+
+            # Parse the JSON into a Python dictionary
+            req = request.get_json()
+
+            if(cmpvisualization == "lineplot"):
+
+
+                resp = make_response(viz.makeLineplot(req))
+                resp.status_code = 201
+                #resp.headers['Access-Control-Allow-Origin'] = '*'
+                resp.mimetype = 'application/json'
+                return resp
+
+            elif(cmpvisualization == "barchart"):
+                resp = make_response(viz.makeBarchart(req))
+                resp.status_code = 201
+                #resp.headers['Access-Control-Allow-Origin'] = '*'
+                resp.mimetype = 'application/json'
+                return resp
             else:
                 return "JSON received!, but not for a lineplot", 200
         else:

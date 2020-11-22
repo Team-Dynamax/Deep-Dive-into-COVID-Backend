@@ -55,17 +55,37 @@ def makeBarchart(usr_request):
         Returns an html string containg the figure via the mpld3 library
 
     '''
-    
+    return {"Status":"Under Construction"}
 
-def makePiechart(usr_request):
+def makePiechart(data):
     '''
         Generates a piechart with two or more countries for the features specified. 
         
          Returns an html string containg the figure via the mpld3 library
 
     '''
-    pass
+        #return "<html> <head> <meta charset=\"utf-8\" /> </head> <body>Hello World</body></html>"
 
+    #fi.fetch_file('temp.csv','Cleaned Data/cleaned_data_test.csv') #consider using a url instead of downloading data
+    df = pd.read_csv('test.csv')
+
+    #data = {'feature':"new_deaths"}
+    #Grabbing locations and feature from user json request
+    locations = data['countries']
+    feature = data['feature']
+    df['date'] = pd.to_datetime(df['date'])
+    df = df[df['location'].isin(locations)]
+    
+
+
+
+    if(len(feature) == 0):
+        return "<html> <head> <meta charset=\"utf-8\" /> </head> <body>No feature passed</body></html>"
+
+    fig = px.pie(df, values=feature, names='location')
+    #fig.show()
+    
+    return plotly.io.to_json(fig)
 
 def getSummary():
     '''
@@ -81,3 +101,4 @@ def getVersion():
 
 #Testing
 #x = makeLineplot('test_req.json')
+#x = makePiechart('test_req.json')
