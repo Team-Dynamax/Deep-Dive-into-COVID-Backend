@@ -19,7 +19,7 @@ import preprocessing
 
 #Postman website: https://www.postman.com/
 
-version = "0.0.8"
+version = "0.2.6"
 
 # Todo: Implement CORS support
 # Look at : 
@@ -59,6 +59,7 @@ class Headings(Resource):
         ret = []
         if(datatype == "numerical"):
             ret = preprocessing.getHeadings(datatype)
+
         elif(datatype == "categorical"):
             ret = preprocessing.getHeadings(datatype)
         else:
@@ -69,54 +70,8 @@ class Headings(Resource):
 @api.resource('/api/options/countries')
 class Countries(Resource):
     def get(self): #Change to fetch countries directly from firebase
-        return ['Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola',
-       'Anguilla', 'Antigua and Barbuda', 'Argentina', 'Armenia', 'Aruba',
-       'Australia', 'Austria', 'Azerbaijan', 'Bahamas', 'Bahrain',
-       'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Benin',
-       'Bermuda', 'Bhutan', 'Bolivia', 'Bonaire Sint Eustatius and Saba',
-       'Bosnia and Herzegovina', 'Botswana', 'Brazil',
-       'British Virgin Islands', 'Brunei', 'Bulgaria', 'Burkina Faso',
-       'Burundi', 'Cambodia', 'Cameroon', 'Canada', 'Cape Verde',
-       'Cayman Islands', 'Central African Republic', 'Chad', 'Chile',
-       'China', 'Colombia', 'Comoros', 'Congo', 'Costa Rica',
-       "Cote d'Ivoire", 'Croatia', 'Cuba', 'Curacao', 'Cyprus',
-       'Czech Republic', 'Democratic Republic of Congo', 'Denmark',
-       'Djibouti', 'Dominica', 'Dominican Republic', 'Ecuador', 'Egypt',
-       'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia',
-       'Ethiopia', 'Faeroe Islands', 'Falkland Islands', 'Fiji',
-       'Finland', 'France', 'French Polynesia', 'Gabon', 'Gambia',
-       'Georgia', 'Germany', 'Ghana', 'Gibraltar', 'Greece', 'Greenland',
-       'Grenada', 'Guam', 'Guatemala', 'Guernsey', 'Guinea',
-       'Guinea-Bissau', 'Guyana', 'Haiti', 'Honduras', 'Hong Kong',
-       'Hungary', 'Iceland', 'India', 'Indonesia', 'International',
-       'Iran', 'Iraq', 'Ireland', 'Isle of Man', 'Israel', 'Italy',
-       'Jamaica', 'Japan', 'Jersey', 'Jordan', 'Kazakhstan', 'Kenya',
-       'Kosovo', 'Kuwait', 'Kyrgyzstan', 'Laos', 'Latvia', 'Lebanon',
-       'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania',
-       'Luxembourg', 'Macedonia', 'Madagascar', 'Malawi', 'Malaysia',
-       'Maldives', 'Mali', 'Malta', 'Marshall Islands', 'Mauritania',
-       'Mauritius', 'Mexico', 'Moldova', 'Monaco', 'Mongolia',
-       'Montenegro', 'Montserrat', 'Morocco', 'Mozambique', 'Myanmar',
-       'Namibia', 'Nepal', 'Netherlands', 'New Caledonia', 'New Zealand',
-       'Nicaragua', 'Niger', 'Nigeria', 'Northern Mariana Islands',
-       'Norway', 'Oman', 'Pakistan', 'Palestine', 'Panama',
-       'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines', 'Poland',
-       'Portugal', 'Puerto Rico', 'Qatar', 'Romania', 'Russia', 'Rwanda',
-       'Saint Kitts and Nevis', 'Saint Lucia',
-       'Saint Vincent and the Grenadines', 'San Marino',
-       'Sao Tome and Principe', 'Saudi Arabia', 'Senegal', 'Serbia',
-       'Seychelles', 'Sierra Leone', 'Singapore',
-       'Sint Maarten (Dutch part)', 'Slovakia', 'Slovenia',
-       'Solomon Islands', 'Somalia', 'South Africa', 'South Korea',
-       'South Sudan', 'Spain', 'Sri Lanka', 'Sudan', 'Suriname',
-       'Swaziland', 'Sweden', 'Switzerland', 'Syria', 'Taiwan',
-       'Tajikistan', 'Tanzania', 'Thailand', 'Timor', 'Togo',
-       'Trinidad and Tobago', 'Tunisia', 'Turkey',
-       'Turks and Caicos Islands', 'Uganda', 'Ukraine',
-       'United Arab Emirates', 'United Kingdom', 'United States',
-       'United States Virgin Islands', 'Uruguay', 'Uzbekistan', 'Vatican',
-       'Venezuela', 'Vietnam', 'Wallis and Futuna', 'Western Sahara',
-       'World', 'Yemen', 'Zambia', 'Zimbabwe'], 200
+        df = preprocessing.pd.read_csv('test.csv')
+        return list(df['location'].unique()), 200
 
 @api.resource('/api/options/charts')
 class ChartOptions(Resource):
@@ -159,7 +114,7 @@ class Image(Resource):
                 resp = make_response(viz.makeLineplot(req))
                 resp.status_code = 201
                 #resp.headers['Access-Control-Allow-Origin'] = '*'
-                resp.mimetype = 'text/html'
+                resp.mimetype = 'application/json'
                 return resp
                 
 
@@ -177,4 +132,4 @@ class Image(Resource):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

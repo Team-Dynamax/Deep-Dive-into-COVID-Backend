@@ -30,7 +30,7 @@ def storeCountryInCsv(data, country):
   data.to_csv("{}_Data.csv".format(country))
 
 def getHeadings(heading_type):
-  firebaseInterface.fetch_file('test.csv','Cleaned Data/cleaned_data_test.csv') #have this be the tracked cleaned file everyday
+  #firebaseInterface.fetch_file('test.csv','Cleaned Data/cleaned_data_test.csv') #have this be the tracked cleaned file everyday
   df = pd.read_csv('test.csv')
   ret = []
   if(heading_type == "numerical"):
