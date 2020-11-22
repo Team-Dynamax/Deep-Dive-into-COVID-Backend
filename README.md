@@ -13,7 +13,8 @@ At the moment the available endpoints are:
 * /api/options/<string:datatype>
 * /api/options/countries
 * /api/options/charts
-* /api/charts/<string:visualization>
+* /api/onechart/<string:cmpvisualization>
+* /api/comparecharts/<string:visualization>
 
 Example:<br /><br />
 `curl https://td-coviz.herokuapp.com/api/hello`<br /><br />
