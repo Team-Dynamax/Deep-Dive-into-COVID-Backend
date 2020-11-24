@@ -1,4 +1,4 @@
-version = "0.0.1" #version of module
+version = "0.0.2" #version of module
 
 
 import pandas as pd
@@ -14,17 +14,25 @@ def getCountryData(country, data):
   """
   return data.loc[data["location"] == country]
   
-
-
 def preprocessData(data, heading):
   """
   Return a pandas Dataframe that containing preprocessed data
   Args: 
       data - A pandas Dataframe form OWID.
+      heading - The heading to be imputed from the dataframe, data
   """
-  tmp_df = data[heading].fillna(0)
-  tmp_df[heading].fillna( inplace = True, method = 'ffill')
-  return tmp_df
+  data[heading].fillna(0,inplace=True)
+  data[heading].fillna(inplace = True, method = 'ffill')
+  
+def refineData(data):
+  """
+    Return a pandas Dataframe that containing preprocessed data
+    Args: 
+        data - A pandas Dataframe form OWID.
+    """
+
+  for heading in data.columns:
+    preprocessData(data,heading)
 
 def storeCountryInCsv(data, country):
   data.to_csv("{}_Data.csv".format(country))
@@ -51,3 +59,5 @@ def getVersion():
         Returns the version of the python module
     """
     print("Version: {}".format(version))
+
+

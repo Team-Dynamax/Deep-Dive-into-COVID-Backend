@@ -1,8 +1,10 @@
 import pandas as pd
 import numpy as np
 import pyrebase
+import time
+from datetime import datetime
 
-version = "0.0.1"
+version = "0.0.3"
 
 #See: shorturl.at/hiF89 for info on why httplib2 v 0.15.0 is used rather than higher versions.
 
@@ -18,6 +20,11 @@ firebaseConfig = {
         "serviceAccount": "team-dynamax-covid-analysis-09c34cfe9f24.json"
     }
 
+def getCleanPath():
+    return str('Cleaned Data/'+str(datetime.now().strftime("%m-%d-%Y"))+'/clean_data.csv')
+
+def getRawPath():
+    return str('Raw Data/'+str(datetime.now().strftime("%m-%d-%Y"))+'/raw_data.csv')
 
 
 def upload_file(local_path,server_path):
@@ -64,3 +71,6 @@ def getVersion():
 
 #getVersion()
 #fetch_file("x.svg","visualizations/sample.svg")
+
+#print("Raw  :",getRawPath())
+#print("Clean:",getCleanPath())

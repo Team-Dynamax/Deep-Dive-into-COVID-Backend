@@ -1,5 +1,7 @@
 /__pycache__
 /.vscode
+/.ipynb
+/testing
 team-dynamax-covid-analysis-09c34cfe9f24.json
 /testing/team-dynamax-covid-analysis-09c34cfe9f24.json
 index.html
@@ -10,6 +12,10 @@ test.csv
 resp.html
 test.py
 test_req.json
+tmp.csv
+testing.ipynb
+temp.csv
+data.csv
 
 
 

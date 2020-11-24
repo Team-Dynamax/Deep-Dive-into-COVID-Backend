@@ -1,12 +1,12 @@
 import pyrebase
-import firebase
 import pandas as pd
-from firebase_admin import credentials, initialize_app, storage
 import httplib2
-from apscheduler.schedulers.blocking import BlockingScheduler
-from datetime import datetime
 import schedule 
 import time
+import preprocessing as prp
+import firebaseInterface as fbase
+
+version = '0.0.5'
 
 firebaseConfig = {
         "apiKey": "AIzaSyBlLrs2zKP0C5nwG97aE4wpMoiQH5ulAlE",
@@ -20,54 +20,24 @@ firebaseConfig = {
         "serviceAccount": "team-dynamax-covid-analysis-09c34cfe9f24.json"
     }
 
-df = pd.read_csv('https://covid.ourworldindata.org/data/owid-covid-data.csv')
-df.to_csv('data.csv')
 
-local_path = 'data.csv'
-server_path = 'team-dynamax-covid-analysis.appspot.com/Cleaned Data'
-def upload_file(local_path,server_path):
-    """
-        This function should fetch the file in the url as specified and download it into the
-        client working directory by the url specified as client_url.
-        Eg.
-        >>fetch_file("downloaded.svg","visualizations/sample.svg")
-        local workspace -----| ..
-                             | <random files if any>
-                             | ..
-                             |->downloaded.svg
-        """
-   
-
-    firebase = pyrebase.initialize_app(firebaseConfig)
-    storage = firebase.storage()
-    storage.child(server_path).put(local_path)
-
-
-
+#print(server_path)
 
 def job():
-    print('This job is run every day at 10pm.')
-    #today = date.today()
-    now = datetime.now() # current date and time
+    #print('This job is run every day at 10pm.')
 
-    year = now.strftime("%Y")
-    #print("year:", year)
+    df = pd.read_csv('https://covid.ourworldindata.org/data/owid-covid-data.csv')
+    df.to_csv('data.csv')
+    local_path = 'data.csv'
 
-    month = now.strftime("%m")
-    #print("month:", month)
+    #Uploading unrefined data
+    fbase.upload_file(local_path,fbase.getRawPath())
 
-    day = now.strftime("%d")
-    #print("day:", day)
-
-    time = now.strftime("%H:%M:%S")
-    #print("time:", time)
-
-    date_time = now.strftime("%m-%d-%Y,%H:%M:%S")
-    print("date and time:",date_time)
-    #print(type(date_time))
-
+    #Cleaning and uploading refined data
+    prp.refineData(df)
+    df.to_csv('data.csv')
+    fbase.upload_file(local_path,fbase.getCleanPath())
     
-    upload_file('data.csv','UnProcessed Data/'+date_time +'/data.csv')
     print('Job Completed')
     
 
@@ -83,5 +53,13 @@ while True:
     schedule.run_pending() 
     time.sleep(1)
 
-#print(os.system('dir'))
+
  
+ def getVersion():
+    """
+        Returns the version of the python module
+    """
+    print("Version: {}".format(version))
+
+
+
