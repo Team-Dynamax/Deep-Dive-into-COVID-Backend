@@ -12,7 +12,7 @@ import firebaseInterface as fbase
 # Flask-RESTful docs: https://flask-restful.readthedocs.io/en/latest/
 # Postman website: https://www.postman.com/
 
-version = "0.3.1"
+version = "0.3.2"
 
 app = Flask(__name__)
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
@@ -107,4 +107,4 @@ class Standalone(Resource):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
