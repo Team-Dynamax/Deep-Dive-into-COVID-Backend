@@ -41,17 +41,8 @@ def job():
     print('Job Completed')
     
 
+job()
 
-schedule.every().day.at("22:00").do(job)
-
-# Loop so that the scheduling task 
-# keeps on running all time. 
-while True: 
-  
-    # Checks whether a scheduled task  
-    # is pending to run or not 
-    schedule.run_pending() 
-    time.sleep(1)
 
 
  
