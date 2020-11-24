@@ -1,8 +1,6 @@
 import pyrebase
 import pandas as pd
 import httplib2
-import schedule 
-import time
 import preprocessing as prp
 import firebaseInterface as fbase
 
