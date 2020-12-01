@@ -77,6 +77,8 @@ Document Naming Convention: <br>
   <tr>
     <td>
      <img src="icons/PNG/1x/025-pikachu.png" align="left" width="27" height="27" style="float: right;">
+     <img src="icons/PNG/1x/025-pikachu.png" align="left" width="27" height="27" style="float: right;">
+     <img src="icons/PNG/1x/025-pikachu.png" align="left" width="27" height="27" style="float: right;">
     </td>
     <td>Anthony Meade</td>
     <td>Testing Team Developer (Backend)</td>
