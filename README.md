@@ -90,6 +90,7 @@ Document Naming Convention: <br>
     <td>
       <img src="icons/PNG/1x/503-samurott.png" align="left" width="27" height="27" style="float: right;">
       <img src="icons/PNG/1x/503-samurott.png" align="left" width="27" height="27" style="float: right;">
+      <img src="icons/PNG/1x/503-samurott.png" align="left" width="27" height="27" style="float: right;">
     </td>
     <td>Shankar Ramharack</td>
     <td>Developer Team Leader(Backend Lead)</td>
@@ -99,14 +100,15 @@ Document Naming Convention: <br>
     <td>
       <img src="icons/PNG/1x/483-dialga.png" align="left" width="27" height="27" style="float: right;">
       <img src="icons/PNG/1x/395-empoleon.png" align="left" width="27" height="27" style="float: right;">
-      <img src="icons/PNG/1x/503-samurott.png" align="left" width="27" height="27" style="float: right;">
     </td>
     <td>Lee Bissessar</td>
     <td>Developer (Frontend Lead)</td>
     <td>Member of the Week for weeks: 5, 6, 7, 9, 10, 11</td>
   </tr>
   <tr>
-    <td></td>
+    <td>
+          <img src="icons/PNG/1x/006-charizard-shiny.png" align="left" width="27" height="27" style="float: right;">
+    </td>
     <td>Joshua Rampersad</td>
     <td>Developer (Frontend)</td>
     <td>Member of the Week for weeks: 8</td>
@@ -114,7 +116,6 @@ Document Naming Convention: <br>
   <tr>
     <td>
       <img src="icons/PNG/1x/384-rayquaza.png" align="left" width="27" height="27" style="float: right;">
-      <img src="icons/PNG/1x/006-charizard-shiny.png" align="left" width="27" height="27" style="float: right;">
     </td>
     <td>Sa’id Ali</td>
     <td>Developer (Backend)</td>
