@@ -52,7 +52,9 @@ Document Naming Convention: <br>
     <th>Comments</th>
   </tr>
     <tr>
-    <td></td>
+    <td>
+      <img src="icons/PNG/1x/054-psyduck.png" align="left" width="27" height="27" style="float: right;">
+     </td>
     <td>Vishard Latchman</td>
     <td>Testing Team Developer (Frontend)</td>
     <td>Member of the Week for weeks: 8</td>
