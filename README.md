@@ -63,13 +63,17 @@ Document Naming Convention: <br>
     <td>
       <img src="icons\PNG\1x\249-lugia.png" align="left" width="27" height="27" style="float: right;">
       <img src="icons\PNG\1x\381-latios.png" align="left" width="27" height="27" style="float: right;">
+      <img src="icons\PNG\1x\381-latios.png" align="left" width="27" height="27" style="float: right;">
     </td>
     <td>Idris Ali </td>
     <td>Testing Team Leader (Frontend Lead)</td>
     <td>Member of the Week for weeks: 3, 5, 8</td>
   </tr>
   <tr>
-    <td></td>
+    <td>
+    <img src="icons\PNG\1x\493-arceus-fire.png" align="left" width="27" height="27" style="float: right;">
+    <img src="icons\PNG\1x\493-arceus-fire.png" align="left" width="27" height="27" style="float: right;">
+    </td>
     <td>Asif Khan</td>
     <td>Testing Team Developer (Frontend)</td>
     <td>Member of the Week for weeks: 5, 8</td>
@@ -85,7 +89,9 @@ Document Naming Convention: <br>
     <td>Member of the Week for weeks: 4, 8, 10</td>
   </tr>
   <tr>
-    <td></td>
+    <td>
+    <img src="icons\PNG\1x\147-dratini-shiny.png" align="left" width="27" height="27" style="float: right;">
+    </td>
     <td>Arif Khan</td>
     <td>Testing Team Developer (Backend Lead)</td>
     <td>Member of the Week for weeks: 8</td>
@@ -106,6 +112,10 @@ Document Naming Convention: <br>
     <td>
       <img src="icons/PNG/1x/483-dialga.png" align="left" width="27" height="27" style="float: right;">
       <img src="icons/PNG/1x/395-empoleon.png" align="left" width="27" height="27" style="float: right;">
+      <img src="icons/PNG/1x/395-empoleon.png" align="left" width="27" height="27" style="float: right;">
+      <img src="icons/PNG/1x/395-empoleon.png" align="left" width="27" height="27" style="float: right;">
+      <img src="icons/PNG/1x/395-empoleon.png" align="left" width="27" height="27" style="float: right;">
+      <img src="icons/PNG/1x/395-empoleon.png" align="left" width="27" height="27" style="float: right;">
     </td>
     <td>Lee Bissessar</td>
     <td>Developer (Frontend Lead)</td>
@@ -121,6 +131,7 @@ Document Naming Convention: <br>
   </tr>
   <tr>
     <td>
+      <img src="icons/PNG/1x/384-rayquaza.png" align="left" width="27" height="27" style="float: right;">
       <img src="icons/PNG/1x/384-rayquaza.png" align="left" width="27" height="27" style="float: right;">
     </td>
     <td>Sa’id Ali</td>
