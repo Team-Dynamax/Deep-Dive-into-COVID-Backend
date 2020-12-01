@@ -55,7 +55,7 @@ Document Naming Convention: <br>
     <td></td>
     <td>Vishard Latchman</td>
     <td>Testing Team Developer (Frontend)</td>
-    <td>Member of the Week for weeks:8</td>
+    <td>Member of the Week for weeks: 8</td>
   </tr>
   <tr>
     <td>
@@ -88,6 +88,8 @@ Document Naming Convention: <br>
   </tr>
   <tr>
     <td>
+      <img src="icons/PNG/1x/503-samurott.png" align="left" width="27" height="27" style="float: right;">
+      <img src="icons/PNG/1x/503-samurott.png" align="left" width="27" height="27" style="float: right;">
       <img src="icons/PNG/1x/503-samurott.png" align="left" width="27" height="27" style="float: right;">
       <img src="icons/PNG/1x/503-samurott.png" align="left" width="27" height="27" style="float: right;">
       <img src="icons/PNG/1x/503-samurott.png" align="left" width="27" height="27" style="float: right;">
