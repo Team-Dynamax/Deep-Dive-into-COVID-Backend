@@ -112,7 +112,7 @@ Document Naming Convention: <br>
     <td>
       <img src="icons/PNG/1x/483-dialga.png" align="left" width="27" height="27" style="float: right;">
       <img src="icons/PNG/1x/395-empoleon.png" align="left" width="27" height="27" style="float: right;">
-      <img src="icons/PNG/1x/395-empoleon.png" align="left" width="27" height="27" style="float: right;">
+      <img src="icons/PNG/1x/319-sharpedo.png" align="left" width="27" height="27" style="float: right;">
       <img src="icons/PNG/1x/395-empoleon.png" align="left" width="27" height="27" style="float: right;">
       <img src="icons/PNG/1x/395-empoleon.png" align="left" width="27" height="27" style="float: right;">
       <img src="icons/PNG/1x/395-empoleon.png" align="left" width="27" height="27" style="float: right;">
@@ -132,7 +132,7 @@ Document Naming Convention: <br>
   <tr>
     <td>
       <img src="icons/PNG/1x/384-rayquaza.png" align="left" width="27" height="27" style="float: right;">
-      <img src="icons/PNG/1x/384-rayquaza.png" align="left" width="27" height="27" style="float: right;">
+      <img src="icons/PNG/1x/405-luxray.png" align="left" width="27" height="27" style="float: right;">
     </td>
     <td>Sa’id Ali</td>
     <td>Developer (Backend)</td>
