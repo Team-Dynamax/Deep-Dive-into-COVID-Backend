@@ -84,7 +84,7 @@ Document Naming Convention: <br>
     <td></td>
     <td>Arif Khan</td>
     <td>Testing Team Developer (Backend Lead)</td>
-    <td>Member of the Week for weeks:8</td>
+    <td>Member of the Week for weeks: 8</td>
   </tr>
   <tr>
     <td>
@@ -99,6 +99,7 @@ Document Naming Convention: <br>
     <td>
       <img src="icons/PNG/1x/483-dialga.png" align="left" width="27" height="27" style="float: right;">
       <img src="icons/PNG/1x/395-empoleon.png" align="left" width="27" height="27" style="float: right;">
+      <img src="icons/PNG/1x/503-samurott.png" align="left" width="27" height="27" style="float: right;">
     </td>
     <td>Lee Bissessar</td>
     <td>Developer (Frontend Lead)</td>
@@ -112,7 +113,8 @@ Document Naming Convention: <br>
   </tr>
   <tr>
     <td>
-      <img src="icons/PNG/1x/384-rayquaza.png" align="left" width="27" height="27" style="float: right;">`
+      <img src="icons/PNG/1x/384-rayquaza.png" align="left" width="27" height="27" style="float: right;">
+      <img src="icons/PNG/1x/006-charizard-shiny.png" align="left" width="27" height="27" style="float: right;">
     </td>
     <td>Sa’id Ali</td>
     <td>Developer (Backend)</td>
