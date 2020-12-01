@@ -90,7 +90,7 @@ Document Naming Convention: <br>
   </tr>
   <tr>
     <td>
-    <img src="icons\PNG\1x\147-dratini-shiny.png" align="left" width="27" height="27" style="float: right;">
+    <img src="icons\PNG\1x\491-darkrai-shiny.png" align="left" width="27" height="27" style="float: right;">
     </td>
     <td>Arif Khan</td>
     <td>Testing Team Developer (Backend Lead)</td>
