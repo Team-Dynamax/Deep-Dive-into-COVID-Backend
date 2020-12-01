@@ -55,7 +55,7 @@ Document Naming Convention: <br>
     <td></td>
     <td>Vishard Latchman</td>
     <td>Testing Team Developer (Frontend)</td>
-    <td>Member of the Week for weeks:</td>
+    <td>Member of the Week for weeks:8</td>
   </tr>
   <tr>
     <td>
@@ -64,13 +64,13 @@ Document Naming Convention: <br>
     </td>
     <td>Idris Ali </td>
     <td>Testing Team Leader (Frontend Lead)</td>
-    <td>Member of the Week for weeks: 3, 5</td>
+    <td>Member of the Week for weeks: 3, 5, 8</td>
   </tr>
   <tr>
     <td></td>
     <td>Asif Khan</td>
     <td>Testing Team Developer (Frontend)</td>
-    <td>Member of the Week for weeks: 5</td>
+    <td>Member of the Week for weeks: 5, 8</td>
   </tr>
   <tr>
     <td>
@@ -78,13 +78,13 @@ Document Naming Convention: <br>
     </td>
     <td>Anthony Meade</td>
     <td>Testing Team Developer (Backend)</td>
-    <td>Member of the Week for weeks: 4</td>
+    <td>Member of the Week for weeks: 4, 8, 10</td>
   </tr>
   <tr>
     <td></td>
     <td>Arif Khan</td>
     <td>Testing Team Developer (Backend Lead)</td>
-    <td>Member of the Week for weeks:</td>
+    <td>Member of the Week for weeks:8</td>
   </tr>
   <tr>
     <td>
@@ -93,7 +93,7 @@ Document Naming Convention: <br>
     </td>
     <td>Shankar Ramharack</td>
     <td>Developer Team Leader(Backend Lead)</td>
-    <td>Member of the Week for weeks: 3, 5</td>
+    <td>Member of the Week for weeks: 3, 5, 7, 8, 10</td>
   </tr>
   <tr>
     <td>
@@ -102,13 +102,13 @@ Document Naming Convention: <br>
     </td>
     <td>Lee Bissessar</td>
     <td>Developer (Frontend Lead)</td>
-    <td>Member of the Week for weeks: 5, 6</td>
+    <td>Member of the Week for weeks: 5, 6, 7, 9, 10, 11</td>
   </tr>
   <tr>
     <td></td>
     <td>Joshua Rampersad</td>
     <td>Developer (Frontend)</td>
-    <td>Member of the Week for weeks:</td>
+    <td>Member of the Week for weeks: 8</td>
   </tr>
   <tr>
     <td>
@@ -116,7 +116,7 @@ Document Naming Convention: <br>
     </td>
     <td>Sa’id Ali</td>
     <td>Developer (Backend)</td>
-    <td>Member of the Week for weeks: 5</td>
+    <td>Member of the Week for weeks: 5, 8</td>
   </tr>
   <tr>
     <td>
@@ -126,7 +126,7 @@ Document Naming Convention: <br>
     </td>
     <td>Ruth Affonso-Smith</td>
     <td>Developer (Frontend)</td>
-    <td>Member of the Week for weeks: 4, 5, 6</td>
+    <td>Member of the Week for weeks: 4, 5, 6, 8</td>
   </tr>
   <tr>
     <td></td>
