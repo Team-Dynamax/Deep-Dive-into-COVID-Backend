@@ -132,6 +132,7 @@ Document Naming Convention: <br>
       <img src="icons/PNG/1x/039-jigglypuff.png" align="left" width="27" height="27" style="float: right;">
       <img src="icons/PNG/1x/039-jigglypuff.png" align="left" width="27" height="27" style="float: right;">
       <img src="icons/PNG/1x/133-eevee.png" align="left" width="27" height="27" style="float: right;">
+      <img src="icons/PNG/1x/133-eevee.png" align="left" width="27" height="27" style="float: right;">
     </td>
     <td>Ruth Affonso-Smith</td>
     <td>Developer (Frontend)</td>
