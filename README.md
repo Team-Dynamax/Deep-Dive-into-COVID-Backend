@@ -63,7 +63,7 @@ Document Naming Convention: <br>
     <td>
       <img src="icons\PNG\1x\249-lugia.png" align="left" width="27" height="27" style="float: right;">
       <img src="icons\PNG\1x\381-latios.png" align="left" width="27" height="27" style="float: right;">
-      <img src="icons\PNG\1x\381-latios.png" align="left" width="27" height="27" style="float: right;">
+      <img src="icons\PNG\1x\095-onix.png" align="left" width="27" height="27" style="float: right;">
     </td>
     <td>Idris Ali </td>
     <td>Testing Team Leader (Frontend Lead)</td>
