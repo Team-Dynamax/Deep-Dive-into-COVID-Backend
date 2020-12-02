@@ -71,8 +71,8 @@ Document Naming Convention: <br>
   </tr>
   <tr>
     <td>
-    <img src="icons\PNG\1x\493-arceus-fire.png" align="left" width="27" height="27" style="float: right;">
-    <img src="icons\PNG\1x\493-arceus-fire.png" align="left" width="27" height="27" style="float: right;">
+    <img src="icons\PNG\1x\160-feraligatr-shiny.png" align="left" width="27" height="27" style="float: right;">
+    <img src="icons\PNG\1x\160-feraligatr.png" align="left" width="27" height="27" style="float: right;">
     </td>
     <td>Asif Khan</td>
     <td>Testing Team Developer (Frontend)</td>
