@@ -17,8 +17,9 @@ learning predictive approaches.
 </p>
 
 Branch Etiquette<br>
-- Create Branch for each feature (visualise one country, compare visualisations of multiple countries and predict and visualise future trends). These brances are for testable code Only <br>
+- A branch for each feature (visualise one country, compare visualisations of multiple countries and predict and visualise future trends) should be made off of the master branch. These brances are for testable code only <br>
 - Other branches can be created for developmental use where you feel appropriate off of the feature branches.<br>
+- When code is ready for testing move it from these other brnches to the feature branch
 - Master branch is restricted.<br>
 - To add code to Master Branch the code must be Approved and Verified.<br>
 
