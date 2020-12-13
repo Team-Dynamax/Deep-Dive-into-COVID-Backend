@@ -46,7 +46,7 @@ def getVersion():
     """
         Returns the version of the python module
     """
-    print("Version: {}".format(version))
+    print("Version: {}".format(VERSION))
 
 
 schedule.every().day.at("22:00").do(job) 
