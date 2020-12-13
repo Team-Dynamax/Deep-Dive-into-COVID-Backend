@@ -4,7 +4,7 @@ import pyrebase
 import time
 from datetime import datetime
 
-version = "0.0.3"
+VERSION = "0.0.3"
 
 #See: shorturl.at/hiF89 for info on why httplib2 v 0.15.0 is used rather than higher versions.
 
@@ -64,13 +64,16 @@ def getVersion():
     """
         Returns the version of the python module
     """
-    print("Version: {}".format(version))
+    print("Version: {}".format(VERSION))
 
 #Testing :)
-#upload_file("test.csv","Cleaned Data/test.csv")
+
+#upload_file("test.csv",str(getCleanPath()))
 
 #getVersion()
-#fetch_file("x.svg","visualizations/sample.svg")
+#fetch_file("xo.jpeg","download_testing/xo.jpeg")
+
+#fetch_file("dtest.csv","Cleaned Data/12-13-2020/clean_data.csv")
 
 #print("Raw  :",getRawPath())
 #print("Clean:",getCleanPath())

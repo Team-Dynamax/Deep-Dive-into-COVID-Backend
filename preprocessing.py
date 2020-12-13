@@ -1,9 +1,10 @@
-version = "0.0.2" #version of module
+VERSION = "0.0.2" #version of module
 
 
 import pandas as pd
 import firebaseInterface
 import numpy as np
+import visualization as viz
 
 def getCountryData(country, data):
   """
@@ -39,7 +40,7 @@ def storeCountryInCsv(data, country):
 
 def getHeadings(heading_type):
   #firebaseInterface.fetch_file('test.csv','Cleaned Data/cleaned_data_test.csv') #have this be the tracked cleaned file everyday
-  df = pd.read_csv('test.csv')
+  df = viz.getData()
   ret = []
   if(heading_type == "numerical"):
     for x in df.columns:
@@ -58,6 +59,6 @@ def getVersion():
     """
         Returns the version of the python module
     """
-    print("Version: {}".format(version))
+    print("Version: {}".format(VERSION))
 
 

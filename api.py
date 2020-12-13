@@ -6,13 +6,14 @@ from flask_cors import CORS
 import visualization as viz
 import preprocessing as prp
 import firebaseInterface as fbase
+#import sched as sch
 
 # See API documentation and SDD for more details. 
 # Flask docs: https://flask.palletsprojects.com/en/1.1.x/
 # Flask-RESTful docs: https://flask-restful.readthedocs.io/en/latest/
 # Postman website: https://www.postman.com/
 
-version = "0.3.2"
+VERSION = "0.3.3"
 
 app = Flask(__name__)
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
@@ -56,7 +57,8 @@ class Headings(Resource):
 class Countries(Resource):
     def get(self): #Change to fetch countries directly from firebase
         fbase.fetch_file('tmp.csv',fbase.getCleanPath())
-        df = prp.pd.read_csv('test.csv')
+        #df = prp.pd.read_csv('test.csv')
+        df = prp.pd.read_csv('tmp.csv')
         return list(df['location'].unique()), 200
 
 @api.resource('/api/options/charts')
@@ -106,5 +108,8 @@ class Standalone(Resource):
             return "Request was not JSON", 400
 
 
+
+
 if __name__ == '__main__':
     app.run()
+

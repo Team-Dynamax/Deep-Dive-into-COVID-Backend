@@ -1,10 +1,12 @@
 import pyrebase
 import pandas as pd
 import httplib2
+import schedule 
+import time
 import preprocessing as prp
 import firebaseInterface as fbase
 
-version = '0.0.5'
+VERSION = '0.0.5'
 
 firebaseConfig = {
         "apiKey": "AIzaSyBlLrs2zKP0C5nwG97aE4wpMoiQH5ulAlE",
@@ -34,21 +36,29 @@ def job():
     #Cleaning and uploading refined data
     prp.refineData(df)
     df.to_csv('data.csv')
+    prp.refineData(df)
+    df.to_csv('data.csv')
     fbase.upload_file(local_path,fbase.getCleanPath())
     
     print('Job Completed')
     
-
-job()
-
-
-
- 
- def getVersion():
+def getVersion():
     """
         Returns the version of the python module
     """
     print("Version: {}".format(version))
 
 
+schedule.every().day.at("22:00").do(job) 
+#schedule.every().day.at("14:11").do(job)    
+while True: 
+    # Checks whether a scheduled task  
+    # is pending to run or not 
+    schedule.run_pending() 
+    time.sleep(1)
 
+ 
+
+
+
+#job()

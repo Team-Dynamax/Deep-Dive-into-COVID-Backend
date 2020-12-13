@@ -5,15 +5,17 @@ import firebaseInterface as fbase
 import plotly
 import plotly.express as px
 
-version = '0.0.8'
+VERSION = '0.0.8'
 
 
 def makeLineplot(data):
+
 
     #Grabbing locations and feature from user json request
     locations = data['countries']
     feature = data['feature']
 
+    
     df = getData()
 
     if(len(feature) == 0):
@@ -38,8 +40,6 @@ def makeLineplot(data):
     return plotly.io.to_json(fig)
     
 
-        
-
 
 def makeBarchart(usr_request):
     '''
@@ -51,8 +51,8 @@ def makeBarchart(usr_request):
     return {"Status":"Under Construction"}
 
 def getData():
-    fbase.fetch_file('temp.csv',fbase.getCleanPath())
-    df = pd.read_csv('temp.csv')
+    fbase.fetch_file('tmp_viz.csv',fbase.getCleanPath())
+    df = pd.read_csv('tmp_viz.csv')
     return df
 
 def makePiechart(data):
@@ -62,10 +62,9 @@ def makePiechart(data):
          Returns an html string containg the figure via the mpld3 library
 
     '''
-    df = getData()
+    df = pd.read_csv('https://covid.ourworldindata.org/data/owid-covid-data.csv')
 
-    #data = {'feature':"new_deaths"}
-    #Grabbing locations and feature from user json request
+
     locations = data['countries']
     feature = data['feature']
     df['date'] = pd.to_datetime(df['date'])
@@ -88,7 +87,7 @@ def getVersion():
     """
         Returns the version of the python module
     """
-    print("Version: {}".format(version))
+    print("Version: {}".format(VERSION))
 
 #Testing
 #x = makeLineplot('test_req.json')
