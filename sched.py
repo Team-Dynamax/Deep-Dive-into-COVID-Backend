@@ -6,7 +6,7 @@ import time
 import preprocessing as prp
 import firebaseInterface as fbase
 
-VERSION = '0.0.5'
+VERSION= '0.0.5'
 
 firebaseConfig = {
         "apiKey": "AIzaSyBlLrs2zKP0C5nwG97aE4wpMoiQH5ulAlE",
@@ -46,11 +46,11 @@ def getVersion():
     """
         Returns the version of the python module
     """
-    print("Version: {}".format(version))
+    print("Version: {}".format(VERSION))
 
 
-schedule.every().day.at("22:00").do(job) 
-#schedule.every().day.at("14:11").do(job)    
+#schedule.every().day.at("22:00").do(job) 
+schedule.every().day.at("05:40").do(job)    
 while True: 
     # Checks whether a scheduled task  
     # is pending to run or not 
